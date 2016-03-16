@@ -3,10 +3,10 @@
 #kuangjia{border: 1px solid #999;
 background:#eee;
 position:relative;
-overflow: auto;
-zoom: 1;
+overflow: auto;/*在必须时候，对象内容才会被裁剪或出现滚动条*/
+zoom: 1;/*适配IE6*/
 margin: 20px;
-min-width: 500px;
+min-width: 500px;/*设定最小宽度。避免在极端情况下出现布局混乱*/
 }
 
 #team{border: 1px solid #999;
@@ -14,19 +14,23 @@ width: 200px;
 height:120px;
 float: left;
 margin: 20px;
+background: #fff;
 }
 
 #introduce{border: 1px solid #999;
 	overflow: auto;
 	margin: 20px 160px 20px 240px;
+	background: #fff;
+	padding: 20px;
    
 }
 
 #logo{border: 1px solid #999;
 margin: 20px;
 width: 120px;
-height: 422px;
-float:right;}
+height: 428px;/*团片默认是有1px边框的，加起来8px，要是有1px边框，好像padding就不全是20px了*/
+float:right;
+background: #fff;}
 
 img{width: 80px;
 height: 80px;
@@ -35,3 +39,4 @@ margin-left: 20px;}
 #team strong{margin-top: 20px;
 	margin-right: 20px;
 position: absolute;}
+p{padding: 20xp;}
