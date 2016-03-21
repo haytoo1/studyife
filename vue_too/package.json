@@ -1,0 +1,22 @@
+{
+  "name": "vue-demo",
+  "version": "1.0.0",
+  "description": "this is a demo for vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "demo-vew"
+  ],
+  "author": "too",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^1.0.18",
+    "vue-validator": "^2.0.0-beta.3"
+  }
+}

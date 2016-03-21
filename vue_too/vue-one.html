@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,14 +7,47 @@
 </head>
 <body>
 <div id="app">
-    {{message}}
+    <p>a={{a}},b={{b}}</p>
+
+
+    <p>{{message}}</p>
     <input v-model="message">
+
+
+
+    <template v-for="user in users|filterBy message in 'name'">
+        <ul v-if="message">
+            <li>{{user.name}}</li>
+        </ul>
+    </template>
 </div>
 <script>
-    new Vue({
+    var vm = new Vue({
         el:'#app',
         data:{
-            message:'你好'
+            message:'',
+            url:'',
+            a:1,
+            users:[
+                {name:'lisi'},
+                {name:'wangwu'},
+                {name:'zhaoliu'}
+            ]
+        },
+        methods:{
+            rev:function(){
+                this.message = this.message.split('').reverse().join('');
+            }
+        },
+        computed:{
+            b:{
+                set:function(newVal){
+                    this.a = newVal-5;
+                },
+                get:function(){
+                    return this.a + 5
+                }
+            }
         }
     });
 </script>
