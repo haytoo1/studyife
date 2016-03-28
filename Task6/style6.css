@@ -259,7 +259,8 @@ li:before {
 	font:italic 17px 黑体;
 	line-height: 24px;
 	position:absolute;
-	left:100px;top:13px;
+	left:100px;
+    top:13px;
 }	
 #hello{
 	font:12px 黑体;
