@@ -19,10 +19,12 @@
 	margin-left:44px;
 }
 .t1 {
-12px "黑体";
-margin-top:40px;
-text-align:center;
-color:#fff;
+    /*12px "黑体";*/
+    font-size: 12px;
+    font-family: 黑体;
+    margin-top:40px;
+    text-align:center;
+    color:#fff;
 }
 .t2{
 	color:#d45d5c;
@@ -273,10 +275,19 @@ li:before {
 	bottom:40px;right:0px;
 	width:180px;
 	font:italic 14px 黑体;
-	color:#5a5b5b;line-height:16px
+	color:#5a5b5b;
+    line-height:16px
 
 }
-.world span{font-size:35px;display: inline;}
+.world .red-tag{
+    font-size:35px;
+    line-height:16px;
+    display: inline;
+    color: red;
+    position: relative;
+    top:18px;
+    left: -4px;
+}
 
 .line6{
 	height:1px;width:892px;
