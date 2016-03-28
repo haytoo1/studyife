@@ -256,10 +256,10 @@ li:before {
 	left:87px;
 	z-index:2;top:15px;}
 #order{
-	font:italic 21px 黑体;
+	font:italic 17px 黑体;
 	line-height: 24px;
 	position:absolute;
-	left:100px;top:15px;
+	left:100px;top:13px;
 }	
 #hello{
 	font:12px 黑体;
