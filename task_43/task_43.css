@@ -123,17 +123,17 @@
 .image_six div:nth-child(4){
 	width: 33.3%;
 	height: 33.3%;
-	float: left;
+	float: right;
 }
 .image_six div:nth-child(5){
 	width: 33.3%;
 	height: 33.3%;
-	float: left;
+	float: right;
 }
 .image_six div:nth-child(6){
 	width: 33.3%;
 	height: 33.3%;
-	float: left;
+	float: right;
 }
 
 .selectedimage{
